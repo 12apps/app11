@@ -4,24 +4,6 @@
 
 <body>
   <div class="container">
-    <header>
-      <h1>Todo List</h1>
-    </header>
-
-    <ul>
-      {{#each tasks}}
-        {{> task}}
-      {{/each}}
-    </ul>
-
-    <form id="add-new-task-form">
-      <input name="newtask" />
-      <button type="submit" id="add-task">Add Task</button>
-    </form>
+    <div class="time">{{days}}:{{hours}}:{{minutes}}:{{seconds}}</div>
   </div>
-
 </body>
-
-<template name="task">
-  <li>{{text}}</li>
-</template>
